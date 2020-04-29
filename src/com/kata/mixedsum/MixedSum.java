@@ -5,12 +5,11 @@ import java.util.List;
 public class MixedSum {
     public static int sum(List<?> mixed) {
         int count = 0;
-        for(Object x: mixed) {
-            if(x instanceof String) {
-                int stringInt = Integer.valueOf((String)x);
+        for (Object x : mixed) {
+            if (x instanceof String) {
+                int stringInt = Integer.valueOf((String) x);
                 count += stringInt;
-            }
-            else if (x instanceof Integer){
+            } else if (x instanceof Integer) {
                 int intInt = (Integer) x;
                 count += intInt;
             }
@@ -24,4 +23,5 @@ public class MixedSum {
         list.add("5");
         sum(list);
 
+    }
 }
