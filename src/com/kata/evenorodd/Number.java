@@ -8,9 +8,17 @@ public class Number {
         return n % 2 == 0;
     }
 
-    public static void main(String[] args) {
-        isEven(4.0);
+    public static String even_or_odd(int number) {
+        if (number % 2 == 0) {
+            return "Even";
+        }
+        else {
+            return "Odd";
+        }
     }
 
+    public static void main(String[] args) {
+        even_or_odd(3);
+    }
 
 }
